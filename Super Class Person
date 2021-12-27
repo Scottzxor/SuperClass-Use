@@ -1,0 +1,59 @@
+/*  Scott Shaulis
+    04/14/2021
+    JDK Version 1.8
+    Parent and Child playing.
+ */
+package personandcustomerclasses;
+
+/**
+ *
+ * @author sshau
+ */
+public class Person {
+
+    private String name;
+    private String address;
+    private String phone;
+
+    public Person() {
+        name = "";
+        address = "";
+        phone = "";
+    }
+
+    public Person(String n, String a, String p) {
+        name = "Scott";
+        address = "9350 Great Tree Drive, Plano, Texas";
+        phone = "520-205-8505";
+    }
+
+    public void setName(String n) {
+        name = n;
+    }
+
+    public void setAddress(String a) {
+        address = a;
+    }
+
+    public void setPhone(String p) {
+        phone = p;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    @Override
+    public String toString() {
+               
+        return "Name: " + name + "\nAddress: " + address + "\nPhone: " + phone;
+    }
+}
