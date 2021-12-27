@@ -1,0 +1,48 @@
+/*  Scott Shaulis
+    04/14/2021
+    JDK Version 1.8
+    Parent and Child playing.
+ */
+package personandcustomerclasses;
+
+/**
+ *
+ * @author sshau
+ */
+ 
+public class Customer extends Person {
+
+    private String customerNumber;
+    private boolean mailingList;
+
+    public Customer() {
+        customerNumber = "";
+        mailingList = false;
+    }
+
+    public Customer(String name, String address, String phone,
+            String n, boolean m) {
+
+        // Using super statement to call superclass constructor for initialization.
+        super(name, address, phone);
+
+        customerNumber = n;
+        mailingList = m;
+    }
+
+    public boolean getMailingList() {
+        return mailingList;
+    }
+
+    public void setMailingList(boolean m) {
+        mailingList = m;
+    }
+
+    public String getCustomerNumber() {
+        return customerNumber;
+    }
+
+    public void setCustomerNumber(String c) {
+        customerNumber = c;
+    }
+}
