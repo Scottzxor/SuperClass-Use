@@ -1,0 +1,43 @@
+/*  Scott Shaulis
+    04/14/2021
+    JDK Version 1.8
+    Parent and Child playing.
+ */
+
+package personandcustomerclasses;
+
+/**
+ *
+ * @author sshau
+ */
+ 
+public class PersonAndCustomerClasses {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+        //Declaring objects from subclass
+        //
+        Customer customerOne = new Customer("", "", "", "972-555-5555", true);
+        Customer customerTwo = new Customer();
+        Customer customerThree = new Customer("", "", "", "972-684-0216", true);
+
+        customerTwo.setName("Alexandra");
+        customerTwo.setAddress("382 Cherry Blossom Hill Drive");
+        customerTwo.setPhone("512-215-1506");
+
+        customerThree.setName("Lisa");
+        customerThree.setAddress("936 Hummingbird Trail");
+        customerThree.setMailingList(true);
+        customerThree.setCustomerNumber("972-525-1515");
+
+        //Using overridden toString for easier testing and formatting.
+        System.out.println(customerOne + "\n");
+        System.out.println(customerTwo + "\n");
+        System.out.println(customerThree + "\nCustomer Number: "
+                + customerThree.getCustomerNumber() + "\n");
+    }
+
+}
